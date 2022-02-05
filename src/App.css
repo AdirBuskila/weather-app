@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-color: #6283c7;
+  /* background-color: #6283c7; */
+  background: url('./assets/img/bg.jpg');
+  background-size: cover;
   height: 100vh;
 }
 
@@ -17,23 +19,28 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #4FBDBA;
 }
 
 .forecasts-container {
-  justify-content: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  align-items: center;
   gap: 20px;
-  width: 100%;
+  width: 100vw;
 }
 
 .forecast {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   height: 400px;
-  width: 200px;
+  width: 250px;
+  color: #072227;
   background-color: rgba(199, 194, 194, 0.438) ;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
 }
 
 .forecast-text {

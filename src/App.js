@@ -9,7 +9,7 @@ import { ForecastList } from './cmps/forecast-list';
 
 
 export const App = () => {
-  const API_KEY = 'N4CxDgJ1zvPqW4hpfIkNgXAvuBfRzxiJ'
+  const API_KEY = 'zGqdiS2lnsdCFGEAQKwdNtKAau45teh8'
   const [inputVal, setInputVal] = useState('')
   const [headlineText, setHeadlineText] = useState('')
   const [locationName, setLocationName] = useState('')
@@ -86,8 +86,8 @@ export const App = () => {
           </form>
       </header>
       <div className='forecast-text'>
-        <p className='forecast-review'>{headlineText}</p>
-        <p className='forecast-location'>{locationName}</p>
+        <h3 className='forecast-location'>{locationName}</h3>
+        <h3 className='forecast-review'>{headlineText}</h3>
       </div>
       <div className='forecasts-container'>
         <ForecastList timeZone={timeZone} forecasts={forecasts} />

@@ -21,12 +21,12 @@ export const ForecastList = ({ forecasts, timeZone }) => {
         <h3 className={`forecast-status${idx}`}>
           {forecast[timeOfDay].IconPhrase}
         </h3>
-        <h4 className={`forecast-temp${idx}`}>
-          {(forecast.Temperature.Maximum.Value +
-            forecast.Temperature.Minimum.Value) /
+        <h3 className={`forecast-temp${idx}`}>
+          {Math.floor((forecast.Temperature.Maximum.Value +
+            forecast.Temperature.Minimum.Value)) /
             2}{' '}
           °C
-        </h4>
+        </h3>
       </div>
     );
   });

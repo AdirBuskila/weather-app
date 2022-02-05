@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {storageService} from './async-storage.service'
-const API_KEY = 'N4CxDgJ1zvPqW4hpfIkNgXAvuBfRzxiJ'
+const API_KEY = 'zGqdiS2lnsdCFGEAQKwdNtKAau45teh8'
 
 export const forecastService = {
     query,
